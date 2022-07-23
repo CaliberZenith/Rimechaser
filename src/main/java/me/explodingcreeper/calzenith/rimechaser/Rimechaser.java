@@ -25,11 +25,10 @@ import org.slf4j.Logger;
 public class Rimechaser {
     ///region Mod Constants
     public static final String MODID = "rimechaser";
+    private static final Logger LOGGER = LogUtils.getLogger();
 
     ///endregion Mod Constants
 
-
-    private static final Logger LOGGER = LogUtils.getLogger();
 
     public Rimechaser() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();

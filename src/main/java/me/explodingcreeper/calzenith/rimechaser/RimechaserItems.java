@@ -1,6 +1,4 @@
-package me.explodingcreeper.calzenith.rimechaser;
-
-import me.explodingcreeper.calzenith.rimechaser.common.items.AncientRime;
+package me.explodingcreeper.calzenith.rimechaser;import me.explodingcreeper.calzenith.rimechaser.common.items.AncientRime;
 import me.explodingcreeper.calzenith.rimechaser.common.items.RimeScraps;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
@@ -12,8 +10,11 @@ import net.minecraftforge.registries.RegistryObject;
 public class RimechaserItems {
 
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Rimechaser.MODID);
-
     // Items
+
     public static final RegistryObject<Item> ANCIENT_RIME = ITEMS.register("ancient_rime", AncientRime::new);
     public static final RegistryObject<Item> RIME_SCRAPS = ITEMS.register("rime_scraps", RimeScraps::new);
+    public static final RegistryObject<Item> FROST_CAPS = ITEMS.register("frost_caps", FrostCaps::new);
+    public static final RegistryObject<Item> THRONE_PIECE = ITEMS.register("throne_piece", ThronePiece::new);
+
 }
